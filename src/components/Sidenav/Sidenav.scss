@@ -1,0 +1,71 @@
+// @import "../../styles/variables";
+
+.sidenav {
+  width: $sidenav-offset;
+  background-color: $background-color;
+  position: fixed;
+
+  border-right: 2px dashed $light-blue;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  min-height: 100vh;
+  top: 0;
+  z-index: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  nav {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  a {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: $text-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    // padding: 6px 8px 6px 16px;
+    position: relative;
+    padding-bottom: 20px;
+
+  }
+
+  a.active::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 16px;
+    width: 150px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: $light-blue;
+    z-index: -1;
+  }
+
+  @media (max-width: 950px) {
+    visibility: hidden;
+  }
+}

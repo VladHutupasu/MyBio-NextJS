@@ -1,0 +1,16 @@
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: dashed 2px $light-blue;
+}
+
+.skill {
+  padding-bottom: 30px;
+}

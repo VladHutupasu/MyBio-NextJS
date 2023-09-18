@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: $dark-blue;
+    color: $shadow-light-blue;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
